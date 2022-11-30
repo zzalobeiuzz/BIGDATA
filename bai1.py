@@ -1,8 +1,8 @@
 #---------------------- Bai 1 -------------------------
 t = int(input())
-if 0<t and t<=100:
-    for i in range (1,t+1):
-        c=input()
+if 0 < t and t <= 100:
+    for i in range (1, t + 1):
+        c = input()
         print(f"Test{i}:\n{c.title()}")
         
         
@@ -10,12 +10,22 @@ if 0<t and t<=100:
 t = int(input())
 nguyenAm = "ueoaiUEOAI"
 tongNguyenAm = 0
-if 0<t and t<=100:
+if 0 < t and t <= 100:
     for i in range(1, t + 1):
-        chuoi=input()
+        chuoi = input()
         for dem in nguyenAm:
             tongNguyenAm += chuoi.count(dem)
-        khoangtrang=chuoi.count(" ")
-        khoangtab=chuoi.count("\t")
-        tongPhuAm=len(chuoi)-tongNguyenAm-khoangtrang-khoangtab
+        khoangtrang = chuoi.count(" ")
+        khoangtab = chuoi.count("\t")
+        tongPhuAm = len(chuoi) - tongNguyenAm - khoangtrang - khoangtab
         print(f"Text {i}:\n",tongNguyenAm,"\n",tongPhuAm)
+
+#---------------------- Bai 3 ------------------------
+t = int(input())
+a = " \t"
+if 0 < t and t <= 100:
+    for i in range(1, t + 1):
+        chuoi = input()
+        for dem in a:
+            sotu = chuoi.split()
+        print(f"Test {i} :",len(sotu))
